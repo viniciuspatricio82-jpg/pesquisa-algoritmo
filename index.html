@@ -1258,14 +1258,7 @@
         </div>
       </div>
 
-      <div class="q-item">
-        <span class="q-label">Pretende permanecer com seu(sua) filho(a) no Colégio Algoritmo em 2027?</span>
-        <div class="radio-grid">
-          <div class="radio-item"><input type="radio" name="perm" id="perm_1"><label for="perm_1">✅ Sim</label></div>
-          <div class="radio-item"><input type="radio" name="perm" id="perm_2"><label for="perm_2">🤔 Provavelmente sim</label></div>
-          <div class="radio-item"><input type="radio" name="perm" id="perm_3"><label for="perm_3">⏳ Ainda estamos avaliando</label></div>
-        </div>
-      </div>
+
     </div>
   </div>
 
@@ -1423,8 +1416,7 @@ function enviarPesquisa() {
     area_outro:     document.getElementById("area_outro")?.value.trim() || "",
     meios_comunicacao: coletarCheckboxes("mid_", 6),
     conheceu:       coletarRadioLabel("conheceu"),
-    fatores_escolha: coletarCheckboxes("fat_", 13),
-    perm:           coletarRadioLabel("perm")
+    fatores_escolha: coletarCheckboxes("fat_", 13)
   };
 
   fetch(SCRIPT_URL, {
